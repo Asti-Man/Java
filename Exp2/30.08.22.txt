@@ -1,0 +1,57 @@
+CODE-1
+
+
+import java.util.Scanner;
+public class Largest {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter three Numbers");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        if(a>b)
+        {
+            if(a>c)
+            System.out.println(a + " is Largest Number");
+            
+        }
+        else if(b>c)
+        System.out.println(b + " is the Largest Number");
+        else
+        System.out.println(c + " is the Largest Number");
+        
+    }
+}
+
+
+CODE-2
+
+import java.util.Scanner;
+
+public class Calculator
+{
+    public static void main(String[] args) 
+    
+    {
+        int a, b, sum, diff, prod, quo, rem;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to the Calculator");
+        System.out.println("Enter the first number: ");
+        a = sc.nextInt();
+        System.out.println("Enter the second number: ");
+        b = sc.nextInt();
+    
+        sum = a + b;
+        diff = a - b;
+        prod = a * b;
+        quo = a / b;
+        rem = a % b;
+        
+        System.out.println("Sum = " + sum);
+        System.out.println("Difference = " + diff);
+        System.out.println("Product = " + prod);
+        System.out.println("Quotient = " + quo);
+        System.out.println("Remainder = " + rem);
+    }
+}

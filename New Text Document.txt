@@ -1,0 +1,29 @@
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+public class Example {
+   public static void main(String[] args) {
+       System.out.print("Insert first date: ");
+       Scanner s = new Scanner(System.in);
+       String[] eingabe1 = new String[3];
+       while (s.hasNext()) {
+           int i = 0;
+           insert1[i] = s.next();
+           if (!s.hasNext()) {
+               s.close();
+               break;
+            }
+            i++;
+        }
+   {
+	String dateBeforeString = "1970-01-01";
+		
+	//Parsing the date
+	LocalDate dateBefore = LocalDate.parse(dateBeforeString);
+		
+	//calculating number of days in between
+	long noOfDaysBetween = ChronoUnit.DAYS.between(dateBefore, dateAfter);
+		
+	//displaying the number of days
+	System.out.println(noOfDaysBetween);
+   }    
+}
